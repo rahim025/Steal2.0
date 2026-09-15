@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Steal</string>
+    <string name="accessibility_service_description">
+        Steal utilise ce service pour comprendre ce qui est affiché à l\'écran et
+        exécuter les actions demandées à la voix (cliquer, faire défiler, saisir du
+        texte) dans n\'importe quelle application, ainsi que pour la fonction de
+        déverrouillage vocal.
+    </string>
+</resources>
