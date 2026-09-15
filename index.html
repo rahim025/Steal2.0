@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#1B2430" />
+<title>Steal — assistant vocal</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icon-192.png" />
+<link rel="apple-touch-icon" href="icon-192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="screen">
+    <header class="top">
+      <h1 class="wordmark">Steal</h1>
+      <p class="tagline">Un assistant vocal qui reste sur ton téléphone.</p>
+    </header>
+
+    <section class="stage" aria-live="polite">
+      <button id="micButton" class="mic" type="button" aria-pressed="false">
+        <span class="bars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </span>
+        <span class="mic-label" id="micLabel">Appuie et parle</span>
+      </button>
+
+      <p class="heard" id="heardText"></p>
+      <p class="reply" id="replyText">Dis « quelle heure est-il », « minuteur de 5 minutes », « cherche… » ou « note :… ».</p>
+    </section>
+
+    <section class="fallback">
+      <label for="typedCommand" class="fallback-label">Ou tape ta commande</label>
+      <form id="typedForm" class="fallback-form">
+        <input id="typedCommand" type="text" placeholder="ex : minuteur de 3 minutes" autocomplete="off" />
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section class="examples">
+      <button class="chip" data-example="quelle heure est-il">l'heure</button>
+      <button class="chip" data-example="minuteur de 5 minutes">minuteur 5 min</button>
+      <button class="chip" data-example="cherche recette de tarte aux pommes">recherche web</button>
+      <button class="chip" data-example="note : acheter du pain">prendre une note</button>
+      <button class="chip" data-example="lis mes notes">lire mes notes</button>
+    </section>
+
+    <section class="notes" id="notesSection" hidden>
+      <h2>Mes notes</h2>
+      <ul id="notesList"></ul>
+    </section>
+
+    <footer class="credit">Conçu par Batchabi Rahim</footer>
+  </main>
+
+<script src="app.js"></script>
+</body>
+</html>
