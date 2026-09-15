@@ -34,4 +34,17 @@
         android:layout_marginTop="12dp"
         android:text="3. Créer ma phrase de déverrouillage" />
 
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/designerCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designed_by"
+        android:textSize="13sp"
+        android:alpha="0.6" />
+
 </LinearLayout>
