@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choisis une phrase de déverrouillage, puis enregistre-la 3 fois pour créer ton empreinte vocale."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/passphraseInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ex : ouvre-toi sésame" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enregistrements : 0 / 3" />
+
+    <Button
+        android:id="@+id/btnRecordSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Enregistrer un échantillon (2,5 s)" />
+
+    <Button
+        android:id="@+id/btnSaveEnrollment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:text="Valider la phrase de déverrouillage" />
+
+</LinearLayout>
